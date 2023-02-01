@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <section>
+      <h2>Finalisation de l'inscription</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iure
+        veritatis voluptates ullam porro molestiae, necessitatibus impedit qui
+        ipsa officiis labore vel numquam enim voluptate exercitationem libero
+        ratione eveniet expedita.<br />Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Excepturi possimus voluptate tenetur sequi numquam.
+        Autem, possimus similique nemo quisquam non quos, magni porro odio, eum
+        aspernatur vitae perferendis minima ipsum?
+      </p>
+    </section>
+    <section>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Informations personnelles</legend>
+          <div>
+            <label for="lastname">Prénom</label>
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Prenom"
+              value=""
+              id="lastname"
+              autofocus
+              required
+            />
+          </div>
+          <div>
+            <label for="firstname">Nom</label>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Nom"
+              value=""
+              id="firstname"
+              autofocus
+              required
+            />
+          </div>
+          <div>
+            <label for="Age">Age</label>
+            <input type="number" name="age" id="age" />
+          </div>
+          <div>
+            <label for="gender">Sexe</label>
+            <select id="gender" name="gender" required="">
+              <option value="">Choose...</option>
+              <option value="Homme" selected>Homme</option>
+              <option value="Femme">Femme</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="mail@example.com"
+              value=""
+              autofocus
+              required
+            />
+          </div>
+          <div>
+            <label for="ap">Adresse postale</label>
+            <input type="text" name="citystreet" id="ap" />
+          </div>
+          <div>
+            <label for="zip">Code postal</label>
+            <input
+              type="text"
+              id="zip"
+              name="cityCode"
+              placeholder="59000"
+              value=""
+              minilength="5"
+              maxlength="5"
+              pattern="[0-0]{5}"
+            />
+          </div>
+          <div>
+            <label for="city">Ville </label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Roubaix"
+              value=""
+            />
+          </div>
+          <div>
+            <label for="job">Métier exercé</label>
+            <input type="text" name="job" id="job" />
+          </div>
+          <div>
+            <label for="nationality">Nationalité</label>
+            <select
+              class="form-select"
+              id="nationality"
+              name="nationality"
+              required=""
+            >
+              <option value="">Choose...</option>
+              <option value="Française">Française</option>
+              <option value="Autre">Autre</option>
+              <option value="Afghane">Afghane</option>
+              <option value="Albanaise">Albanaise</option>
+              <option value="Algérienne">Algérienne</option>
+              <option value="Allemande">Allemande</option>
+              <option value="Bahamienne">Bahamienne</option>
+              <option value="Bahreïnienne">Bahreïnienne</option>
+              <option value="Bangladaise">Bangladaise</option>
+              <option value="Barbadienne">Barbadienne</option>
+              <option value="Barbudienne">Barbudienne</option>
+              <option value="Cambodgienne">Cambodgienne</option>
+              <option value="Camerounaise">Camerounaise</option>
+              <option value="Canadienne">Canadienne</option>
+              <option value="Capverdienne">Capverdienne</option>
+              <option value="Chilienne">Chilienne</option>
+              <option value="Colombienne">Colombienne</option>
+              <option value="Comorienne" selected>Comorienne</option>
+            </select>
+          </div>
+          <div>
+            <label for="birthdate" class="form-label">Date de naissance</label>
+            <input
+              type="date"
+              class="form-control"
+              id="birthdate"
+              name="birthdate"
+              placeholder=""
+              value=""
+            />
+          </div>
+          <div>
+            <label for="birthRegion" class="form-label"
+              >Pays de naissance</label
+            >
+            <select
+              class="form-select"
+              id="birthRegion"
+              name="birthRegion"
+              required=""
+            >
+              <option value="">Choose...</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Afrique du Sud">Afrique du Sud</option>
+              <option value="Albanie">Albanie</option>
+              <option value="Algérie">Algérie</option>
+              <option value="Allemagne">Allemagne</option>
+              <option value="Bahamas">Bahamas</option>
+              <option value="Bahreïn">Bahreïn</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Barbade">Barbade</option>
+              <option value="Bélarus">Bélarus</option>
+              <option value="Chili">Chili</option>
+              <option value="Chine">Chine</option>
+              <option value="Chypre">Chypre</option>
+              <option value="Colombie">Colombie</option>
+              <option value="Comores" selected>Comores</option>
+            </select>
+          </div>
+          <div>
+            <label for="cpam">Numéro de sécurité social</label>
+            <input
+              type="number"
+              maxlength="13"
+              id="ss"
+              name="socialNumber"
+              placeholder="2960259123456"
+              value=""
+            />
+          </div>
+          <div>
+            <label for="passeportnumber">Numéro du passeport</label>
+            <input
+              type="text"
+              id="passeportnumber"
+              name="note[cir]"
+              placeholder=""
+              value=""
+              pattern="[0-9]{2}[a-zA-Z]{2}[0-9]"
+            />
+          </div>
+          <div>
+            <label for="pe-date">Date de délivrance du passeport</label>
+            <input
+              type="date"
+              id="pe-date"
+              name="note[peDate]"
+              value=""
+              placeholder=""
+            />
+          </div>
+          <div>
+            <label for="pe-date">Date de validité du passeport</label>
+            <input
+              type="date"
+              id="pe-date"
+              name="note[peDate]"
+              value=""
+              placeholder=""
+            />
+          </div>
+        </fieldset>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+  </body>
+</html>
